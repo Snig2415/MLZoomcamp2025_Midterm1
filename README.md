@@ -41,7 +41,6 @@ The notebook includes examples of predicting outcomes for new animal entries. Yo
 To deploy the model as an API:
 
 • 	Interactive docs: http://localhost:8000/docs
-• 	Example request body:
 
 7. Docker Deployment 
 To containerize the API:
