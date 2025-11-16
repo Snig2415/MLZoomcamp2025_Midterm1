@@ -4,19 +4,20 @@
 🐾 ML_Zoomcamp_2025 – Austin Animal Center Project
 
 1. Dataset- data folder
-This project uses public datasets from the Austin Animal Center, which include:
-• 	Intakes: Records of animals entering the shelter
-	Outcomes: Records of animals leaving the shelter
+   
+This project uses public datasets from the Austin Animal Center, which include:  
+• 	Intakes: Records of animals entering the shelter  
+	Outcomes: Records of animals leaving the shelter  
 
-These datasets contain information such as animal type, breed, intake reason, outcome type, and dates.
+These datasets contain information such as animal type, breed, intake reason, outcome type, and dates.  
 
-2. Data Cleaning Pipeline
-The notebook performs the following preprocessing steps:
-• 	✅ Loads both datasets and merges them on animal_ID
-• 	✅ Filters out irrelevant columns and handles missing values
-• 	✅ Converts date columns to datetime format
-• 	✅ Encodes categorical features (e.g., animal type, intake condition)
-• 	✅ Creates a binary target column:  (e.g., Adopted vs. Not Adopted)
+2. Data Cleaning Pipeline  
+The notebook performs the following preprocessing steps:  
+• 	✅ Loads both datasets and merges them on animal_ID  
+• 	✅ Filters out irrelevant columns and handles missing values  
+• 	✅ Converts date columns to datetime format  
+• 	✅ Encodes categorical features (e.g., animal type, intake condition)  
+• 	✅ Creates a binary target column:  (e.g., Adopted vs. Not Adopted)  
 
 3. Model
 The model used is a Random Forest Classifier, trained to predict the outcome of an animal based on:
