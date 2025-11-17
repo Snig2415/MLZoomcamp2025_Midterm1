@@ -3,7 +3,7 @@
 
 🐾 ML_Zoomcamp_2025 – Austin Animal Center Project
 
-What we’re trying to predict:  
+Problem Statement -What we’re trying to predict:  
 This project predicts whether a pet entering the Austin Animal Center will be adopted or not. Using information such as animal type, breed, intake condition, and other relevant attributes, the model outputs a probability of adoption for each animal.  
 
 1. Dataset- data folder  
@@ -14,7 +14,7 @@ This project uses public datasets from the Austin Animal Center, which include:
 
 These datasets contain information such as animal type, breed, intake reason, outcome type, and dates.    
 
-2. Data Cleaning Pipeline    
+2. ,EDA , Data Cleaning   
 The notebook performs the following preprocessing steps:    
 • 	✅ Loads both datasets and merges them on animal_ID  <br>
 • 	✅ Filters out irrelevant columns and handles missing values  <br>
