@@ -87,9 +87,14 @@ def evaluate(model, X_test, y_test):
 # =============================
 
 def save_artifacts(model, dv):
-    joblib.dump(model, "model.joblib")
-    joblib.dump(dv, "dictvectorizer.joblib")
-    print("Saved: model.joblib, dictvectorizer.joblib")
+    import os
+    os.makedirs("models", exist_ok=True)
+    joblib.dump(model, "models/model.joblib")
+    joblib.dump(dv, "models/dv.joblib")
+    print("Saved model and DictVectorizer in models/ folder.")
+    # joblib.dump(model, "model.joblib")
+    # joblib.dump(dv, "dictvectorizer.joblib")
+    # print("Saved: model.joblib, dictvectorizer.joblib")
 
 # =============================
 # MAIN EXECUTION

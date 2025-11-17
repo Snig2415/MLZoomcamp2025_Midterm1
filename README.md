@@ -19,7 +19,11 @@ The notebook performs the following preprocessing steps:
 • 	✅ Encodes categorical features (e.g., animal type, intake condition)  
 • 	✅ Creates a binary target column:  (e.g., Adopted vs. Not Adopted)  
 
-3. Model
+Feature Selection :
+categorical = ["intake_type", "intake_condition", "animal_type", "sex_upon_intake", "breed", "color"]
+numeric = ["month", "year"]
+
+3. Model 
 The model used is a Random Forest Classifier, trained to predict the outcome of an animal based on:
 • 	Animal type and breed
 • 	Intake condition and type
@@ -45,4 +49,8 @@ To deploy the model as an API:
 7. Docker Deployment 
 To containerize the API:
 
+docker build -t pet-adoption-fastapi .
+docker run -p 8000:8000 pet-adoption-fastapi
+
 API will be available at http://localhost:8000/docs
+Health check: curl http://localhost:8000/health
