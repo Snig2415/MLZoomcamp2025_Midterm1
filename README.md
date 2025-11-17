@@ -49,7 +49,8 @@ To deploy the model as an API:
 7. Docker Deployment 
 To containerize the API:
 
-docker build -t pet-adoption-fastapi .
+docker build -t pet-adoption-fastapi .  
+
 docker run -p 8000:8000 pet-adoption-fastapi
 
 API will be available at http://localhost:8000/docs
